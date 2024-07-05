@@ -1,5 +1,9 @@
 .MContent{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
     padding: 10px;
+
 }
 
 body{
@@ -13,29 +17,28 @@ body{
     border-radius: 10px;
     background-color: #77DD77;
     font-size: medium;
+    align-items: center;
+    align-content: center;
 
 }
 
 .Logo{
     width: 50%;
     min-height: 50px;
-    padding-left: 5%;
+    padding-left: 15%;
     padding-right: 5%;
     line-height: 50px;
-    margin-bottom: 10px;
     float: left;
 }
 
 .Logo img{
     max-width: 100%;
     max-height: 100%;
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
     float: auto;
     display: block;
     margin-bottom: 10px;
-    shape-outside: circle();
-    margin-right: 10px;
 
 }
 
@@ -46,36 +49,44 @@ body{
     padding-left: 5%;
     padding-right: 5%;
     line-height: 100px;
-    margin-bottom: 10px;
     float: left;
     text-align: center;
 }
 
-
-.MContent{
-    display:flex;
-    flex-wrap: wrap;
-    margin: 10px;
-
+.About{
+    height: 100vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
 }
 
 .AbtCompany {
-    width: 100%;
-    margin-bottom: 10px;
-    line-height: 100px;
-    background-color: lightgrey;
+    background-color: #77DD77;
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: 30px;
+
   }
 
-#AbtCompany img{
-    margin-top: 10px;
-    width: 250px;
-    height: 250px;
-    margin-bottom: 10px;
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+#LogoPic img{
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to left, #77DD77 10%, #F7F6CF);
+    margin-right: 15px;
+    background-color: white;
+    float: left;
+    border-radius: 10px;
 
 }
 
-.Crane {
+#Descrption p{
+    letter-spacing: 1px;
+    text-align: justify;
+    text-justify: inter-word;
+    color: white;
+
+}
+
+.Crane  {
     width: 100%;
     height: 100px;
     margin-bottom: 10px;
@@ -84,11 +95,7 @@ body{
 
 }
 
-#Crane img{
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
-}
+
 
 .Excavator {
     width: 100%;
@@ -112,33 +119,45 @@ body{
 .Footer{
     width: 100%;
     display: flex;
-    background-color: #77DD77;
-    margin-top: 10px;
     border-radius: 10px;
+    background-color: #77DD77;
+    font-size: medium;
+    align-items: center;
+    align-content: center;
+    margin-top: 30px;
 
 }
 
 .Foot{
     width: 50%;
-    padding-left: 5%;
     min-height: 50px;
+    padding-left: 15%;
     padding-right: 5%;
     line-height: 50px;
     float: left;
 }
 
 .Foot img{
-        width: 100px;
-        height: 100px;
-        float: left;
-        display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: 125px;
+    height: 125px;
+    float: auto;
+    display: block;
+    margin-bottom: 10px;
 }
 
 .Info{
     width: 50%;
+    min-height: 60px;
+    padding-left: 5%;
+    padding-right: 5%;
     line-height: 100px;
     float: left;
+    text-align: center;
 }
+
+/*Responsive*/
 
 @media screen and (max-width: 767px){
     
