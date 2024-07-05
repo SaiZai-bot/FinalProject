@@ -1,10 +1,12 @@
-.MContent{
-    display: flex;
+
+.About {
+    display: grid;
     flex-wrap: wrap;
     margin: 10px;
     padding: 10px;
-
+    font-family: fantasy;
 }
+
 
 body{
     background-color: #F7F6CF;
@@ -53,23 +55,20 @@ body{
     text-align: center;
 }
 
-.About{
-    height: 100vh;
-    overflow: auto;
-    scroll-snap-type: y mandatory;
-}
+
 
 .AbtCompany {
     background-color: #77DD77;
     border-radius: 10px;
-    margin: 10px;
     margin-top: 30px;
-
+    align-self: auto;
+    margin-bottom: 30px;
+    
   }
 
 #LogoPic img{
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
     background: linear-gradient(to left, #77DD77 10%, #F7F6CF);
     margin-right: 15px;
     background-color: white;
@@ -78,53 +77,139 @@ body{
 
 }
 
+
 #Descrption p{
     letter-spacing: 1px;
     text-align: justify;
     text-justify: inter-word;
     color: white;
+    margin-right: 10px;
 
 }
 
-.Crane  {
-    width: 100%;
-    height: 100px;
-    margin-bottom: 10px;
-    line-height: 100px;
-    background-color: lightgrey
+.heading {
+    color: white;
+    font-size: 36px; 
+    font-weight: bold;
+    text-align: center; 
+    margin-bottom: 20px;
+  }
+
+.Pictures1 {
+    background-color: #77DD77;
+    border-radius: 10px;
+    margin-top: 30px;
+    display: flex;
+    animation: Fade linear;
+    animation-timeline: view();
 
 }
 
-
-
-.Excavator {
-    width: 100%;
-    height: 200px;
-    margin-bottom: 10px;
-    line-height: 100px;
-    background-color: lightgrey
+#Crane img{
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(to right, #77DD77 10%, #F7F6CF);
+    float: right;
+    border-radius: 10px;
 
 }
 
-.Hauls {
-    width: 100%;
-    height: 200px;
-    margin-bottom: 10px;
-    line-height: 100px;
-    background-color: lightgrey;
+#Crane p{
+    letter-spacing: 1px;
+    text-align: justify;
+    text-justify: inter-word;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
 
 }
 
+.headingC {
+    color: white;
+    font-size: 36px; 
+    font-weight: bold;
+    text-align: center; 
+    margin-bottom: 20px;
+  }
+
+
+.Pictures2 {
+    background-color: #77DD77;
+    border-radius: 10px;
+    display: flex;
+    margin-top: 10px;
+    animation: Fade linear;
+    animation-timeline: view()
+}
+
+#Excavator img {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(to left, #77DD77 10%, #F7F6CF);
+    float: left;
+    border-radius: 10px;
+}
+
+#Excavator p{
+    letter-spacing: 1px;
+    text-align: justify;
+    text-justify: inter-word;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.headingE {
+    color: white;
+    font-size: 36px; 
+    font-weight: bold;
+    text-align: center; 
+    margin-bottom: 20px;
+  }
+
+.Pictures3 {
+    background-color: #77DD77;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    animation: Fade linear;
+    animation-timeline: view()
+}
+
+#Hauls img {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(to right, #77DD77 10%, #F7F6CF);
+    float: right;
+    border-radius: 10px;
+}
+
+#Hauls p {
+    letter-spacing: 1px;
+    text-align: justify;
+    text-justify: inter-word;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.headingH {
+    color: white;
+    font-size: 36px; 
+    font-weight: bold;
+    text-align: center; 
+    margin-bottom: 20px;
+  }
 
 .Footer{
+    margin-top: 30px;
     width: 100%;
-    display: flex;
     border-radius: 10px;
     background-color: #77DD77;
     font-size: medium;
     align-items: center;
     align-content: center;
-    margin-top: 30px;
 
 }
 
@@ -148,25 +233,52 @@ body{
 }
 
 .Info{
+   margin-top: 10px;
     width: 50%;
-    min-height: 60px;
+    padding-left: 5%;
+    padding-right: 5%;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+}
+
+.info1{
+    width: 50%;
     padding-left: 5%;
     padding-right: 5%;
     line-height: 100px;
-    float: left;
-    text-align: center;
 }
 
-/*Responsive*/
-
-@media screen and (max-width: 767px){
-    
+.info2{
+    width: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+    line-height: 100px;
 }
 
-@media screen and (min-width: 767px) and (max-width: 1023px) {
-    
+.info2{
+    width: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+    line-height: 100px;
 }
 
-@media screen and (min-width: 1024px) {
+
+@keyframes Fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+        transform: translate();
+    }
+    100%{
+        transform: translate();
     
 }
