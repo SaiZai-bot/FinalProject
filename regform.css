@@ -22,7 +22,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: #ECC7B0;
+    background-color: lightslategrey;
 }
 
 .intro {
@@ -55,6 +55,7 @@ form {
     background-color: #ECC7B0;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
 }
 
 form h2 {
