@@ -1,0 +1,181 @@
+
+
+* {
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    height: auto;
+    background-color: #ECC7B0;
+
+}
+
+
+.Header{
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    background-color: #4D2D18;
+    font-size: medium;
+    align-items: center;
+    align-content: center;
+    transition: all 1s;
+    margin-bottom: 20px;
+
+}
+
+.Logo{
+    width: 50%;
+    min-height: 50px;
+    padding-left: 15%;
+    padding-right: 5%;
+    line-height: 50px;
+    float: left;
+}
+
+.Logo img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 125px;
+    height: 125px;
+    float: auto;
+    display: block;
+    margin-bottom: 10px;
+    transition: all 1s;
+
+}
+
+
+.Navigation{
+    width: 50%;
+    min-height: 60px;
+    padding-left: 5%;
+    padding-right: 5%;
+    line-height: 100px;
+    float: left;
+    text-align: center;
+}
+
+.nav_link {
+    color: white;
+    font-size: 15px;
+    position: relative;
+    transition: all 0.42;
+    text-decoration: none;
+    padding: 10px;
+   
+}
+
+.nav_link:hover{
+    color: #ECC7B0;
+}
+
+.nav_link::after{
+    content: '';
+    height: 4px;
+    width: 100%;
+    font-weight: bolder;
+    background: #ECC7B0;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    opacity: 0;
+    transition: all 0.5s;
+    pointer-events: none;
+}
+
+.nav_link:hover::after{
+    opacity: 1;
+    transition: all 0.5s;
+
+}
+
+
+.carousel {
+    width: auto;
+    height: 500px;
+    border-radius: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    cursor: grab;
+    position: center;
+    padding: 0;
+
+}
+
+.carousel > img {
+    flex: 0 0 100%;
+    height: auto;
+    width: auto;
+    position: sticky;
+    left: 0;
+    scroll-snap-align: start;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+
+.Footer{
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #4D2D18;
+    font-size: medium;
+    align-items: center;
+    align-content: center;
+    color: white;
+    font-style: 'Poppins';
+
+}
+
+.Foot{
+    width: 50%;
+    min-height: 50px;
+    padding-left: 15%;
+
+    line-height: 50px;
+
+}
+
+.Foot img{
+    width: 125px;
+    height: 125px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.Info{
+    width: 50%;
+    padding-left: 5%;
+    float: left;
+
+}
+
+.info1{
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
+
+.info2{
+    padding-left: 5%;
+    padding-right: 5%;
+   
+}
+
+.info2{
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
+
+
+
+
