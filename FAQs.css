@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
 .Header{
     width: 100%;
     display: flex;
     border-radius: 10px;
-    background-color: #4D2D18;
+    background-color: #97C94C;
     font-size: medium;
     align-items: center;
     align-content: center;
     transition: all 1s;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 
 }
 
@@ -46,7 +47,7 @@
 }
 
 .nav_link {
-    color: white;
+    color: #232323;
     font-size: 15px;
     position: relative;
     transition: all 0.42;
@@ -55,27 +56,52 @@
    
 }
 
+
 .nav_link:hover{
-    color: #ECC7B0;
+    color: whitesmoke;
+    background-color: #232323;
+    border-radius: 20px;
 }
 
 .nav_link::after{
-    content: '';
     height: 4px;
     width: 100%;
     font-weight: bolder;
-    background: #ECC7B0;
+    background: #232323;
     position: absolute;
     left: 0;
-    bottom: 1px;
     opacity: 0;
     transition: all 0.5s;
     pointer-events: none;
 }
 
+
 .nav_link:hover::after{
     opacity: 1;
     transition: all 0.5s;
+
+}
+
+
+.AbtCompany {
+    background-color: #97C94C;
+    border-radius: 10px;
+    margin-top: 30px;
+    align-self: auto;
+    margin-bottom: 30px;
+    transition: all 1s;
+    
+  }
+
+#LogoPic img{
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(to left, #97C94C 10%, #232323);
+    margin-right: 15px;
+    background-color: white;
+    float: left;
+    border-radius: 10px;
+    transition: all 1s;
 
 }
 
@@ -91,7 +117,7 @@ body{
     width: 100%;
     height: auto;
     padding: 3%;
-    background-color: #ECC7B0;
+    background-color: #232323;
 
 }
 
@@ -144,7 +170,7 @@ body{
     width: 20%;
     min-width: 100px;
     height: 100%;
-    background-color: #4D2D18;
+    background-color: #97C94C;
     color: white;
     border: none;
     border-radius: 30px;
@@ -172,6 +198,7 @@ body{
     padding: 5% 0 0 0;
     font-size: 30px;
     letter-spacing: 2;
+    color: whitesmoke;
 }
 
 .body-img {
@@ -183,13 +210,13 @@ body{
     flex: 1;
     min-width: 320px;
     padding: 2% 0 4% 4%;
-    border-left: 2px solid #4D2D18;
+    border-left: 2px solid whitesmoke;
 }
 
 .faqs-wrapper {
     width: 100%;
     padding: 1.5rem;
-    border-bottom: 2px solid #4D2D18;
+    border-bottom: 2px solid whitesmoke;
 }
 
 .faq-title {
@@ -199,7 +226,7 @@ body{
     letter-spacing: 1.2;
     font-size: 24px;
     font-weight: 600;
-    color: #4D2D18;
+    color: whitesmoke;
 }
 
 .faq-title:after{
@@ -229,6 +256,7 @@ body{
 
 .faq-trigger:checked + .faq-title + .faq-detail{
     max-height: 300px;
+    color: whitesmoke;
 }
 
 .faq-trigger:checked + .faq-title::after{
@@ -238,15 +266,16 @@ body{
 
 
 
+
 .Footer{
     margin-top: 30px;
     width: 100%;
     border-radius: 10px;
-    background-color: #4D2D18;
+    background-color: #97C94C;
     font-size: medium;
     align-items: center;
     align-content: center;
-    color: white;
+    color: #232323;
     font-style: 'Poppins';
 
 }

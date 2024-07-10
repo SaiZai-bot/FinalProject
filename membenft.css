@@ -65,18 +65,18 @@ body {
 }
 
 .nav_link:hover{
-    color: #232323;
+    color: whitesmoke;
+    background-color: #232323;
+    border-radius: 20px;
 }
 
 .nav_link::after{
-    content: '';
     height: 4px;
     width: 100%;
     font-weight: bolder;
     background: #232323;
     position: absolute;
     left: 0;
-    bottom: 1px;
     opacity: 0;
     transition: all 0.5s;
     pointer-events: none;
@@ -163,12 +163,14 @@ body {
 
 .signup:hover{
     color: #232323;
-    text-transform: uppercase;
+    font-weight: bolder;
+    
 }
 
 .signup{
     text-decoration: none;
-    color: #97C94C;
+    color: whitesmoke;
+
 }
 
 
@@ -227,4 +229,3 @@ body {
     padding-right: 5%;
     
 }
-
