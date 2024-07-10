@@ -22,7 +22,7 @@ body{
     align-items: center;
     align-content: center;
     transition: all 1s;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 
 }
 
@@ -94,8 +94,8 @@ body{
 
 
 .carousel {
-    width: auto;
-    height: 500px;
+    max-width: 100%;
+    height: 550px;
     border-radius: 10px;
     overflow-x: auto;
     overflow-y: hidden;
@@ -104,10 +104,12 @@ body{
     cursor: grab;
     position: center;
     padding: 0;
+    background: #4D2D18;
+    text-transform: uppercase;
 
 }
 
-.carousel > img {
+.carousel > div {
     flex: 0 0 100%;
     height: auto;
     width: auto;
@@ -115,6 +117,51 @@ body{
     left: 0;
     scroll-snap-align: start;
     border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#image_1 {
+    background-image: linear-gradient(rgba(128, 128, 128, 0.8), rgba(128, 128, 128,0.8)), url("HaulTruck.jpg");
+  }
+  
+#image_2 {
+background-image: linear-gradient(rgba(128, 128, 128, 0.8), rgba(128, 128, 128,0.8)),url("CraneTruck.jpg");
+}
+
+#image_3 {
+background-image: linear-gradient(rgba(128, 128, 128, 0.8), rgba(128, 128, 128,0.8)),url("ExcavatorTruck.jpg");
+}
+
+#image_4 {
+background-image: linear-gradient(rgba(128, 128, 128, 0.8), rgba(128, 128, 128,0.8)),url("CementTruck.jpg");
+}
+
+#image_5 {
+background-image: linear-gradient(rgba(128, 128, 128, 0.8), rgba(128, 128, 128,0.8)),url("LoaderTruck.jpg");
+}
+
+#image_6 {
+background-image: linear-gradient(rgba(128, 128, 128, 0.8), rgba(128, 128, 128,0.8)),url("BulldozerTruck.jpg");
+}
+
+.carousel > div p {
+    font-size: xx-large;
+    color: whitesmoke;
+    text-align: center;
+    text-align: justify;
+    line-height: 50px;
+    
+}
+
+.carousel > div h1 {
+    font-size: xx-large;
+    color: whitesmoke;
+    text-align: center;
+    
 }
 
 ::-webkit-scrollbar{
