@@ -14,6 +14,104 @@
 
 }
 
+
+nav{
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .links-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  .open-sidebar-button:hover{
+    cursor: pointer;
+    background-color: #232323;
+    border-radius: 20px;
+
+  }
+
+  .close-sidebar-button:hover{
+    cursor: pointer;
+    background-color: #232323;
+    border-radius: 30px;
+  }
+
+  nav a{
+   
+    padding: 10px;
+    display: flex;
+    text-decoration: none;
+    color: whitesmoke;
+    justify-content: end;
+    margin: 5px;
+  }
+  nav a:hover{
+    background-color: #232323;
+    border-radius: 20px;
+
+  }
+  nav .home-link{
+    margin-left: auto;
+  }
+  nav svg{
+    fill: whitesmoke;
+  }
+
+  #sidebar-active{
+    display: none;
+  }
+  
+  .open-sidebar-button, .close-sidebar-button{
+    display: none;
+  }
+
+
+  @media(max-width: 600px){
+    .links-container{
+      flex-direction: column;
+      align-items: flex-start;
+  
+      position: fixed;
+      top: 0;
+      right: -100%;
+      z-index: 10;
+      width: 300px;
+  
+      background-color: #97C94C;
+      box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+      transition: 0.75s ease-out;
+    }
+    nav a{
+      box-sizing: border-box;
+      height: auto;
+      width: 100%;
+      padding: 20px 30px;
+      justify-content: flex-start;
+    }
+    .open-sidebar-button, .close-sidebar-button{
+      padding: 20px;
+      display: block;
+    }
+    #sidebar-active:checked ~ .links-container{
+      right: 0;
+    }
+    #sidebar-active:checked ~ #overlay{
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9;
+    }
+  }
+
 .Logo{
     width: 50%;
     min-height: 50px;
@@ -35,53 +133,11 @@
 
 }
 
-
-.Navigation{
-    width: 50%;
-    min-height: 60px;
-    padding-left: 5%;
-    padding-right: 5%;
-    line-height: 100px;
-    float: left;
-    text-align: center;
-}
-
-.nav_link {
-    color: #232323;
-    font-size: 15px;
-    position: relative;
-    transition: all 0.42;
-    text-decoration: none;
-    padding: 10px;
-   
-}
-
-
-.nav_link:hover{
-    color: whitesmoke;
+nav .links-container a:nth-of-type(4) {
     background-color: #232323;
     border-radius: 20px;
-}
-
-.nav_link::after{
-    height: 4px;
-    width: 100%;
-    font-weight: bolder;
-    background: #232323;
-    position: absolute;
-    left: 0;
-    opacity: 0;
-    transition: all 0.5s;
-    pointer-events: none;
-}
-
-
-.nav_link:hover::after{
-    opacity: 1;
-    transition: all 0.5s;
-
-}
-
+    cursor: not-allowed;
+  }
 
 .AbtCompany {
     background-color: #97C94C;

@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" text="text/css" href="contacts.css">
     <link rel="icon" href="SnakeLg.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -14,41 +15,53 @@
         <div class="Logo">
             <img src="SnakeLg.png">
         </div>
+        <nav>
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </label>
 
-        <nav class="Navigation">
-            <a class="nav_link" href="membenft.html">Member</a>
-            <a class="nav_link" href="Product.html">Product</a>
-            <a class="nav_link" href="FAQs.html">Support</a>
-            <a class="nav_link" href="creator.html">Creator</a>
-            <a class="nav_link" href="index.html">About</a>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container">
+            <label for="sidebar-active" class="close-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </label>
+            
+            <a class="home-link" href="index.html">About</a> 
+            <a href="membenft.html">Member</a> 
+            <a href="Product.html">Product</a>
+            <a href="FAQs.html">Support</a>
+            <a href="contacts.html">Contacts</a>
+            <a href="creator.html">Creator</a>
+            
+            </div>
         </nav>
-
     </div>
 
     <div class="scrollC">
         <div class="scrollA">
-            Main Office location
+            <h1>Main Office</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15441.075111875556!2d121.03986584139106!3d14.640678373604416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7a749cbf86f%3A0xd1737fddea79ac4b!2s8%20Matiyaga%2C%20Diliman%2C%20Lungsod%20Quezon%2C%201100%20Kalakhang%20Maynila!5e0!3m2!1sen!2sph!4v1720772542995!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         </div>
 
         <div class="scrollA">
-            Social media
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15448.188883580538!2d120.96995494135592!3d14.539291675034686!2m3!1f0!
+            2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cbe4c6d3dd53%3A0xf58cfc232fa56f85!2sMOA%20Concert%20Grounds!
+            5e0!3m2!1sen!2sph!4v1720773507384!5m2!1sen!2sph" width="600" height="450" 
+            style="border:0;" allowfullscreen="" loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h1>Garage Location</h1>
         </div>
 
         <div class="scrollA">
-            Branch Offices
-        </div>
-
-        <div class="scrollA">
-            Agents
-        </div>
-
-        <div class="scrollA">
-            Garage location
-        </div>
-
-        <div class="scrollA">
-            <a class="signup" href="regform.html"> member </a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-reddit"></a>
+            <h1>Social Media</h1>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
         </div>
 
     </div>
