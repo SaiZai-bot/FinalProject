@@ -185,44 +185,50 @@ nav .links-container a:nth-of-type(6) {
 }
 
 #image_1 {
-    background-image: linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0,0.8)), url("HaulTruck.jpg");
+    background-image: linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0,0.8)), url("CEO.jpg");
   }
   
 #image_2 {
-background-image: linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0,0.8)),url("CraneTruck.jpg");
+background-image: linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0,0.8)),url("building.jpg");
 }
 
 #image_3 {
-background-image: linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0,0.8)),url("ExcavatorTruck.jpg");
+background-image: linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0,0.8)),url("company.jpg");
 }
 
 #image_4 {
-background-image: linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0,0.8)),url("CementTruck.jpg");
+background-image: linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0,0.8)),url("company2.jpg");
 }
 
 #image_5 {
-background-image: linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0,0.8)),url("LoaderTruck.jpg");
+background-image: linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0,0.8)),url("company3.jpg");
 }
 
 #image_6 {
-background-image: linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0,0.8)),url("BulldozerTruck.jpg");
+background-image: linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0,0.8)),url("meeting.jpg");
 }
 
 .carousel > div p {
     font-size: large;
     color: whitesmoke;
-    text-align: center;
     text-align: justify;
-    margin: 0 auto;
+    margin: 10px ;
     font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    place-items: center;
     
 }
 
 .carousel > div h1 {
+    display: grid;  
     font-size: xx-large;
     color: whitesmoke;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    place-items: center;
+    justify-content: center;
     
     
 }

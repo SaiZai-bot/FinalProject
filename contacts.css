@@ -17,56 +17,76 @@ nav{
     justify-content: flex-end;
     align-items: center;
   }
-  .links-container{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: auto;
-  }
 
-  .open-sidebar-button:hover{
-    cursor: pointer;
-    background-color: #232323;
-    border-radius: 20px;
+.links-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+}
 
-  }
+.open-sidebar-button:hover{
+  cursor: pointer;
+  background-color: #232323;
+  border-radius: 20px;
 
-  .close-sidebar-button:hover{
-    cursor: pointer;
-    background-color: #232323;
-    border-radius: 30px;
-  }
+}
 
-  nav a{
-    padding: 10px;
-    display: flex;
-    text-decoration: none;
-    color: whitesmoke;
-    justify-content: end;
-    margin: 5px;
-  }
-  nav a:hover{
-    background-color: #232323;
-    border-radius: 20px;
+.close-sidebar-button:hover{
+  cursor: pointer;
+  background-color: #232323;
+  border-radius: 30px;
+}
 
-  }
-  nav .home-link{
-    margin-left: auto;
-  }
-  nav svg{
-    fill: whitesmoke;
-  }
+nav a{
+  padding: 10px;
+  display: flex;
+  text-decoration: none;
+  color: whitesmoke;
+  justify-content: end;
+  margin: 5px;
+}
+nav a:hover{
+  background-color: #232323;
+  border-radius: 20px;
 
-  #sidebar-active{
-    display: none;
-  }
-  
-  .open-sidebar-button, .close-sidebar-button{
-    display: none;
-  }
+}
+nav .home-link{
+  margin-left: auto;
+}
+nav svg{
+  fill: whitesmoke;
+}
 
+#sidebar-active{
+  display: none;
+}
+
+.open-sidebar-button, .close-sidebar-button{
+  display: none;
+}
+
+.scrollA a:nth-last-of-type(1):hover{
+  background-color: #bc1888;
+  color: whitesmoke;
+}
+
+.scrollA a:nth-last-of-type(2):hover{
+  background-color: #4267B2;
+  color: whitesmoke;
+}
+
+.scrollA a:nth-last-of-type(3):hover{
+  background-color: #FF0000;
+  color: whitesmoke;
+}
+
+.scrollA a:nth-last-of-type(4):hover{
+  background-color: #0077B5;
+  color: whitesmoke;
+}
 
   @media(max-width: 600px){
     .links-container{

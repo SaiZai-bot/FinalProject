@@ -17,11 +17,6 @@ body{
 }
 
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 nav{
     height: 60px;
     display: flex;
@@ -172,6 +167,7 @@ nav{
     
     
   }
+
 
 #LogoPic img{
     width: 500px;

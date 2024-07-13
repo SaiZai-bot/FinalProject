@@ -166,21 +166,19 @@ nav .links-container a:nth-of-type(3) {
 }
 
 .carousel > div {
-    flex: 0 0 100%;
-    height: auto;
-    width: auto;
-    position: sticky;
-    left: 0;
-    scroll-snap-align: start;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-   
-    
-
+  flex: 0 0 100%;
+  height: auto;
+  width: auto;
+  position: sticky;
+  left: 0;
+  scroll-snap-align: start;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
 }
 
 #image_1 {
@@ -212,7 +210,7 @@ background-image: linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0,0.8)),url("Bulldo
     color: whitesmoke;
     text-align: center;
     text-align: justify;
-    margin: 0 auto;
+    margin: 15px;
     font-weight: 600;
     
 }
